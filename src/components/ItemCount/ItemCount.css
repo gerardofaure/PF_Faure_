@@ -1,0 +1,20 @@
+.miBtn {
+    background-color: #0071DC;
+    border-radius: 10px;
+    border: none;
+    color: #F5F5F5;
+    font-weight: 600;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+p {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 10px;
+}

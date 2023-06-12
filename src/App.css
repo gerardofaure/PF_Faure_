@@ -7,6 +7,22 @@
   pointer-events: none;
 }
 
+.tuCompra {
+  text-align: end;
+}
+
+.footerClasico {
+  background-color: #0071DC;
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  color: #4123B8;
+}
+
+.footerClass {
+  margin-top: 0;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -32,6 +48,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

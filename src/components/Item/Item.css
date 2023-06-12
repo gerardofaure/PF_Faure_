@@ -1,0 +1,27 @@
+.tarjetaProducto {
+    background-color: #FFD103;
+    border-radius: 10px;
+    width: 15rem;
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:#645B85;
+    font-weight: 200;
+}
+
+.cardProd {
+    width: 180px;
+    object-fit: contain;
+    border-radius: 20px;
+}
+
+.btnProducto {
+    background-color: #4123B8;
+    color: #EDC48A;
+    font-size: 1.2rem;
+    width: 8rem;
+    border-radius: 10px;
+    border: none;
+}
