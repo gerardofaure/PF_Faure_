@@ -2,7 +2,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #4123B8;
     background-color: #0071DC;
     border-radius: 20px;
     width: 100%;
@@ -21,7 +20,7 @@ li {
 .miBtnnav {
     background-color: white;
     border-radius: 10px;
-    border: none;
+    border: 1px solid #ccc;
     color: #4123B8;
     font-weight: 600;
     padding: 10px 20px;
@@ -39,9 +38,12 @@ li {
 
 .isoChilectra {
     text-align: left;
-    font-family: Comic Sans MS;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
     font-weight: bold;
     font-size: 45px;
-    color: #EBD758;
-    text-shadow: -1px 0 #414D68, 0 1px #414D68, 1px 0 #414D68, 0 -1px #414D68, -2px 2px 0 #414D68, 2px 2px 0 #414D68, 1px 1px #414D68, 2px 2px #414D68, 3px 3px #414D68, 4px 4px #414D68, 5px 5px #414D68, 6px 6px #414D68, 7px 7px #414D68, 8px 8px #414D68, 9px 9px #414D68;
+    color: #FFD103;
+    text-shadow: -1px 0 rgb(28, 49, 233), 0 1px #414D68, 1px 0 #414D68, 0 -1px #414D68,
+        -2px 2px 0 #414D68, 2px 2px 0 #414D68, 1px 1px #414D68, 2px 2px #414D68,
+        3px 3px #414D68, 4px 4px #414D68, 5px 5px #414D68, 6px 6px #414D68,
+        7px 7px #414D68, 8px 8px #414D68, 9px 9px #414D68;
 }

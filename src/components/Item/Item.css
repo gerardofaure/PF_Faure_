@@ -9,12 +9,14 @@
     align-items: center;
     color:#645B85;
     font-weight: 200;
+    border: 1px solid #ccc;
 }
 
 .cardProd {
     width: 180px;
     object-fit: contain;
     border-radius: 20px;
+    border: 1px solid #ccc;
 }
 
 .btnProducto {
@@ -23,5 +25,5 @@
     font-size: 1.2rem;
     width: 8rem;
     border-radius: 10px;
-    border: none;
+    border: 1px solid #ccc;
 }

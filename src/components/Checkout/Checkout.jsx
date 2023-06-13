@@ -5,23 +5,38 @@ import {collection, addDoc, updateDoc, doc, getDoc} from 'firebase/firestore';
 import './Checkout.css'
 
 
+
 const Checkout = () => {
     const {carrito, vaciarCarrito, total} = useContext(CarritoContext);
     const [nombre, setNombre] = useState("");
-    const [apellido, setApellido] = useState("");
+    const [direccion, setDireccion] = useState("");
     const [telefono, setTelefono] = useState("");
     const [email, setEmail] = useState("");
     const [emailConfirmacion, setEmailConfirmacion] = useState("");
     const [error, setError] = useState("");
     const [ordenId, setOrdenId] = useState("");
+
+    //--------------------------------------------
+    const vaciarFormulario = () => {
+        setNombre("");
+        setDireccion("");
+        setTelefono("");
+        setEmail("");
+        setEmailConfirmacion("");
+        };
     
     //funciones y validaciones: 
 
     const manejadorFormulario = (event) => {
         event.preventDefault();
+        
+
 
         //Verificamos que los campos esten completos:
-        if(!nombre || !apellido || !telefono || !email || !emailConfirmacion) {
+       
+
+
+        if(!nombre || !direccion || !telefono || !email || !emailConfirmacion) {
             setError("Complete todos los campos"); 
             return;
         }
@@ -29,8 +44,11 @@ const Checkout = () => {
         //Validamos que los campos del email coincidan 
         if(email !== emailConfirmacion) {
             setError("Los correos electrónicos deben ser iguales");
+            
             return;
         }
+
+        
 
         //Paso 1: Creamos el objeto de la orden: 
 
@@ -42,7 +60,7 @@ const Checkout = () => {
             })),
             total: carrito.reduce((total, producto)=> total + producto.item.precio * producto.cantidad, 0),
             nombre,
-            apellido, 
+            direccion, 
             telefono,
             email,
             fecha: new Date(),
@@ -69,6 +87,9 @@ const Checkout = () => {
                     .then((docRef) => {
                         setOrdenId(docRef.id);
                         vaciarCarrito();
+                        vaciarFormulario();
+                        
+                    
                     })
                     .catch((error) => {
                         console.error("Error al crear la orden", error);
@@ -78,15 +99,24 @@ const Checkout = () => {
             .catch((error) => {
                 console.error("Error al actualizar el stock", error);
                 setError("Se produjo un error al actualizar el stock de los productos, vuelva más tarde");
-            })
+                
+                
+            });
+            
+        
+
+       
     }
+    
 
     return(
 
 
     <div>
-        <h2>Pedido de compra</h2>
-        <form onSubmit={ manejadorFormulario } className="formulario">
+        <div className="stpedido" >
+             <h2>Pedido de compra</h2>
+        </div>
+            <form onSubmit={manejadorFormulario} className="formulario">
             {carrito.map(producto => (
                 <div className="itemPedido" key={producto.item.id}>
                     <p>
@@ -95,7 +125,7 @@ const Checkout = () => {
                     <p> Precio $: {producto.item.precio} </p>
                 </div>
             ))}
-            <p className="tuCompra" >Total Compra: ${total} </p>
+            
             <hr />
 
                 <div className="form-group">
@@ -104,8 +134,8 @@ const Checkout = () => {
                 </div>
                 
                 <div className="form-group">
-                    <label htmlFor=""> Apellido </label>
-                    <input type="text" value={apellido} onChange={(e)=>setApellido(e.target.value)}/>
+                    <label htmlFor=""> Dirección de Envío </label>
+                    <input type="text" value={direccion} onChange={(e)=>setDireccion(e.target.value)}/>
                 </div>
 
                 <div className="form-group">
@@ -122,17 +152,25 @@ const Checkout = () => {
                     <label htmlFor=""> Email Confirmación </label>
                     <input type="email" value={emailConfirmacion} onChange={(e)=> setEmailConfirmacion(e.target.value)} />
                 </div>
+                <hr />
+                <p className="tuCompra" >Total de tu Compra: ${total} </p>
 
-                {error && <p style={{color:"red"}}> {error} </p>}
-                <button className="miBtn" type="submit"> Finalizar Compra </button>
+                {error && <p className="sterror"> {error} </p>}
+                <button className="miBtn" type="submit"  > Finalizar Compra </button>
         </form>
         {
             ordenId && (
-                <strong className="ordenId">¡Gracias por tu compra! Tu número de Orden es {ordenId} </strong>
+                    
+                    <strong className="ordenId" >¡Gracias por tu compra! Tu número de Orden es {ordenId} </strong>
+               
             )
-        }
+            
+        }        
     </div>
+    
   )
+  
 }
 
 export default Checkout
+

@@ -44,5 +44,16 @@ h2 {
     margin-bottom: 3px;
     padding-top: 6px;
     padding-bottom: 6px;
+    border: 1px solid #ccc;
 
+}
+
+.stpedido {
+
+    color: black;
+    font-size: 2rem;
+
+}
+.sterror{
+    color:red;
 }
