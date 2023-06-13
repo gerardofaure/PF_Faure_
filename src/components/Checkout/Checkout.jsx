@@ -88,12 +88,11 @@ const Checkout = () => {
         <h2>Pedido de compra</h2>
         <form onSubmit={ manejadorFormulario } className="formulario">
             {carrito.map(producto => (
-                <div key={producto.item.id}>
+                <div className="itemPedido" key={producto.item.id}>
                     <p>
-                        {producto.item.nombre} x {producto.cantidad}
+                        {producto.cantidad} x {producto.item.nombre}
                     </p>
                     <p> Precio $: {producto.item.precio} </p>
-                    <hr />
                 </div>
             ))}
             <p className="tuCompra" >Total Compra: ${total} </p>

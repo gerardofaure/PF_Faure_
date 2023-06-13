@@ -8,7 +8,9 @@ const NavBar = () => {
     <>
     <header>
       <Link to={"/"}>
-        <img className="logoChilectra" src={logoChilectra} alt="logo Chilectras" />
+          <>
+        <img className="logoChilectra" src={logoChilectra} alt="logo Chilectras" /> 
+        <p className="isoChilectra" >CHILECTRAS</p></>
       </Link>
 
       <nav>

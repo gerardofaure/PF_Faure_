@@ -36,3 +36,13 @@ h2 {
     border-radius: 5px;
 
 }
+
+.itemPedido{
+    background-color: #FFD103;
+    border-radius: 10px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+}

@@ -15,10 +15,11 @@ img {
     align-items: center;
     padding: 2rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
     margin: 3rem;
-    max-width: 800px;
+    max-width: 50rem;
     margin: 3rem auto;
+    background-color: #FFD103;
+    border-radius: 20px;
 }
 
 .contenedorItem h2 {

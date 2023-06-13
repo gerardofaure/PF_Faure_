@@ -1,0 +1,43 @@
+.footerClasico {
+    display: flex;
+    flex-direction: column;
+    background-color: #0071DC;
+    position: relative;
+    width: 100%;
+    height: 10px;
+    color: #EBEBEB;
+    bottom: 0;
+
+}
+
+.indicefooter {
+    background-color:#0071DC;
+    flex-direction: row;
+    text-align: center;
+    
+}
+
+.txtfooter1{
+    font-size: 1.5rem;
+    font-style: oblique;
+    font-weight:lighter;
+}
+
+.txtfooter2 {
+    font-size: 1rem;
+    font-style:oblique;
+    font-weight: lighter;
+
+}
+.txtfooter3 {
+    font-size: 1rem;
+    font-style: oblique;
+    font-weight: lighter;
+}
+
+.txtfooter4 {
+    font-size: 1rem;
+    font-style: oblique;
+    font-weight: lighter;
+}
+

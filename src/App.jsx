@@ -23,13 +23,8 @@ function App() {
             <Route path='/checkout' element={<Checkout />} />
           </Routes>
         </CarritoProvider>
-        <Footer />
-
-      </BrowserRouter>
-
-
-
-
+        </BrowserRouter>
+      <Footer />
 
     </>
   );

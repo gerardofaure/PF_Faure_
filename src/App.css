@@ -11,17 +11,7 @@
   text-align: end;
 }
 
-.footerClasico {
-  background-color: #0071DC;
-  position: absolute;
-  width: 100%;
-  height: 10px;
-  color: #4123B8;
-}
 
-.footerClass {
-  margin-top: 0;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -52,4 +42,13 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.itemCarro{
+  background-color: #FFD103;
+  padding-left: 2rem;
+  padding-top: 0.5rem;
+  margin-top: 8px;
+  border-radius: 2rem;
+  margin-bottom: 4px;
 }

@@ -29,15 +29,15 @@ const ItemDetail = ({ id, nombre, precio, img, stock, desc, preciorender }) => {
   return (
     <div className='contenedorItem'>
       <h2>{nombre} </h2>
-      <h3>{preciorender} </h3>
-      <h3>SKU: CH000{id} </h3>
+      <h2>{preciorender} </h2>
+      <p >Sku: CH000{id} </p>
       <p> {desc}</p>
       <img src={img} alt={nombre} />
       {
         //Acá empleamos la lógica de montaje y desmontaje de componentes: 
       }
       {
-        agregarCantidad > 0 ? (<Link to="/cart" className='miBtn'> Terminar Compra </Link>) : (<ItemCount inicial={1} stock={stock} funcionAgregar={manejadorCantidad} />)
+        agregarCantidad > 0 ? (<Link to="/cart" className='miBtn'> Orden de Compra </Link>) : (<ItemCount inicial={1} stock={stock} funcionAgregar={manejadorCantidad} />)
       }
     </div>
   )

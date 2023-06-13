@@ -5,25 +5,16 @@ const Footer = () => {
         <div>
 
             <footer className="footerClasico" >
-                <ul>
-                    <li className="footerClass">
-                        <p >dadssad</p>
-                        <h6>sadsadsad</h6>
-                    </li>
-                    <li className="footerClass">
-                        <p>dadssad</p>
-                        <h6>sadsadsad</h6>
-                    </li>
-                    <li className="footerClass">
-                        <p>dadssad</p>
-                        <h6>sadsadsad</h6>
-                    </li>
-                    <li className="footerClass">
-                        <p>dadssad</p>
-                        <h6>sadsadsad</h6>
-                    </li>
+                <div >
+                    <div className='indicefooter'>
+                        <p className='txtfooter1' >Chilectras @ 2023</p>
+                        <p className='txtfooter2' >Geefebe Inc.</p>
+                        <p className='txtfooter3' >Santiago de Chile</p>
+                        <p className='txtfooter4' >**********</p>
+                    </div>
 
-                </ul>
+                </div>
+
             </footer>
 
 
