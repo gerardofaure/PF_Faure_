@@ -12,6 +12,7 @@ Esta alpicación de simulación de tienda de artículos electrónicos es mi proy
 
 Incluir algunas capturas de pantalla del proyecto en acción. Por ejemplo:
 
+![GIF APP](/public/img/pfgif-faure.gif)
 ![Captura de pantalla 1](/public/img/pantalla001.png)
 ![Captura de pantalla 2](/public/img/pantalla002.png)
 
