@@ -7,14 +7,12 @@
     height: 10px;
     color: #EBEBEB;
     bottom: 0;
-
 }
 
 .indicefooter {
     background-color:#0071DC;
     flex-direction: row;
     text-align: center;
-    
 }
 
 .txtfooter1{
@@ -40,4 +38,3 @@
     font-style: oblique;
     font-weight: lighter;
 }
-

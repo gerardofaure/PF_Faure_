@@ -57,3 +57,29 @@ h2 {
 .sterror{
     color:red;
 }
+
+@keyframes colorChange {
+    0% {
+        color: black;
+    }
+
+    60% {
+        color: #0071DC;
+    }
+
+    100% {
+        color: black;
+    }
+}
+
+.ordenId {
+    animation: colorChange 2s linear infinite;
+    font-size: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    
+}

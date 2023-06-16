@@ -30,6 +30,4 @@ const ItemCount = ({inicial, stock, funcionAgregar}) => {
   )
 }
 
-//Incrementar y decrementar van sin parentesis porque si no se ejecutarían al momento de renderizar el componente. Y solo queremos que se ejecute cuando el visitante haga click en los botones. 
-
 export default ItemCount
