@@ -1,3 +1,6 @@
+@media screen and (min-width: 1100px) {
+
+
 .stCart {
     display: flex;
     flex-direction: column;    
@@ -14,6 +17,9 @@
     width: 100%;
 }
 
+
+
+}
 /*
 
 

@@ -1,5 +1,33 @@
 .imgCarroCompras {
     width: 4rem;
+    margin-right: 1rem;
+}
+
+.itemsIndicador {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px auto;
+    padding: 5%;
+    color: #FFD103;
+    font-size: 1.5rem;
+    font-weight: bolder;
+
+}
+
+
+
+
+
+@media screen and (min-width: 1100px) {
+
+.imgCarroCompras {
+    width: 4rem;
     margin-right: 2rem;
 }
 
@@ -17,5 +45,7 @@
     color: #FFD103;
     font-size: 1.5rem;
     font-weight:bolder;
+
+}
 
 }

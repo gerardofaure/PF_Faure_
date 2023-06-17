@@ -18,7 +18,7 @@ Incluir algunas capturas de pantalla del proyecto en acción. Por ejemplo:
 
 ## Instalación
 
-Indicar los pasos necesarios para instalar y ejecutar el proyecto localmente. Por ejemplo:
+Para instalar y ejecutar el proyecto localmente. Siga los siguientes pasos:
 
 1. Clonar el repositorio: `git clone https://github.com/gerardofaure/PF_Faure_.git`
 2. Instalar las dependencias: `npm install`
@@ -26,16 +26,16 @@ Indicar los pasos necesarios para instalar y ejecutar el proyecto localmente. Po
 
 ## Uso
 
-Comience eligiendo la categoria del producto buscado.
-Luego puede ver sus detalles cliqueando el boton "Ver Detalles".
-Posterioremente elija la cantidad de unidades a comprar.
-Presione "Agregar al Carrito" cuando haya elegido la cantidad deseada.
-Haga click en "Orden de Compra" o bien en otra categoria si desea agregar mas de un producto.
-En esta seccion podrá visualizar todos los items que ha seleccionado anteriormente.
-Para eliminarlos presiona sobre el icono de "Vaciar Carro de Compras".
-Una vez terminados los cambios presiona "Realizar Pedido".
-El sistema lo enviará al registro de datos para que indique lo que se solicita.
-Finalmente, presione en "Finalizar Compra" y se generará su numero de pedido.
+- Comience eligiendo la categoria del producto buscado.
+- Luego puede ver sus detalles cliqueando el boton "Ver Detalles".
+- Posterioremente elija la cantidad de unidades a comprar.
+- Presione "Agregar al Carrito" cuando haya elegido la cantidad deseada.
+- Haga click en "Orden de Compra" o bien en otra categoria si desea agregar mas de un producto.
+- En esta seccion podrá visualizar todos los items que ha seleccionado anteriormente.
+- Para eliminarlos presiona sobre el icono de "Vaciar Carro de Compras".
+- Una vez terminados los cambios presiona "Realizar Pedido".
+- El sistema lo enviará al registro de datos para que indique lo que se solicita.
+- Finalmente, presione en "Finalizar Compra" y se generará su numero de pedido.
 
 
 ## Contribución
