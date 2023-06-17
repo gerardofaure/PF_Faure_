@@ -44,7 +44,7 @@ Como se trata de un proyecto de aprendizaje, espero tus contribuciones:
 Siéntete libre de enviar tus reparos a gerardofaure@gmail.com.
 Reporta cualquier problema o error que encuentres en los issues del proyecto.
 
-## Licencia
+### Licencia
 
 Este proyecto está licenciado bajo la Licencia MIT - consulta el archivo LICENSE para obtener más detalles.
 Los nombres CHILECTRAS y GEEFEBE son marcas registradas con patente en tramite.
