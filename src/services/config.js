@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBzyr6b-hUBjTnx6RXhhTRdjEfUG5RQbFE",
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
     authDomain: "chilectra-final.firebaseapp.com",
     projectId: "chilectra-final",
     storageBucket: "chilectra-final.appspot.com",
